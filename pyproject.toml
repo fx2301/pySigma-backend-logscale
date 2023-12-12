@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pySigma-backend-logscale"
+version = "0.1.0"
+description = "pySigma LogScale backend"
+authors = ["fx2301 <https://github.com/fx2301>"]
+license = "MIT"
+repository = "https://github.com/fx2301/pySigma-backend-logscale"
+packages = [
+    { include = "sigma" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pysigma = "^0.10.9"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+coverage = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
